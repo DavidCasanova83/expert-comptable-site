@@ -11,6 +11,8 @@
 html,body{
     /* font-family: 'Liu Jian Mao Cao', cursive; */
     font-family: 'Montserrat', sans-serif;
+    background-color: #eee;
+    color:#333;
 }
 
 p{
@@ -26,6 +28,37 @@ a{
     text-decoration: none;
 }
 
+ul{
+    list-style: none;
+}
+
+strong{
+    color: #f1c40f;
+    font-weight: 400;
+}
+
+em{
+    color:#555;
+}
+
+/* class */
+
+.container{
+    display: block;
+    max-width: 1200px;
+    margin:auto;
+}
+.title{
+    font-weight: 300;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.bg-dark{
+    background: #333;
+    color: white;
+}
+
 /* HEADER + VP */
 
 .vp-container{
@@ -39,6 +72,7 @@ header{
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    line-height: 2rem;
 }
 
 header a {
@@ -56,8 +90,9 @@ header a {
     align-items: center;
 }
 .vp-logo a{
-font-size: 3rem;
+font-size: 4rem;
 margin-left: 25px;
+font-weight: 300;
 }
 
 .vp-logo i{
@@ -67,6 +102,33 @@ margin-left: 25px;
 
 .vp{
     flex:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/images/frame.jpg) center center/cover;
+}
+
+.vp-content{
+    max-width: 800px;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.vp-content h1{
+    font-size: 3.2rem;
+    margin-bottom: 2rem;
+
+}
+.vp-content p {
+    font-size: 1.8rem;
+    padding: 1rem;
+    font-weight: 300 ;
+    letter-spacing: 1px;
+    line-height: 2rem;
 }
 
 
@@ -83,4 +145,174 @@ header ul li {
 
 header ul li a:hover{
     color:#f1c40f
+}
+
+/* OFFER */
+
+.offer{
+ padding: 10rem 1rem 10rem 1rem;
+}
+
+.offer-list{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.offer-elem{
+    background: white;
+    margin: 1rem;
+    border:1px solid #ddd;
+    flex:1;
+}
+
+.offer-elem-img{
+    width:100%;
+}
+
+.offer-elem-text{
+    padding: 2rem;
+    text-align: center;
+}
+
+.offer-separator{
+    height: 2px;
+    width: 50px;
+    margin: 1rem auto;
+    background-color: #333;
+}
+
+/* WHO */
+
+.who{
+    display: flex;
+    flex-flow: row nowrap;
+    min-height: 600px;
+}
+
+.who-content-img{
+    flex:1;
+    background: url(/images/team.jpg) center center/cover;
+}
+
+.who-content-img img{
+    width: 100%;
+}
+
+.who-content-text{
+    flex: 1;
+    padding: 4rem;
+    background: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.who-content-text h2{
+    margin-bottom: 2rem;
+}
+
+.who-content-text p{
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+}
+
+/* AVIS */
+
+.avis{
+    padding: 5rem 1rem 5rem 1rem;
+}
+
+.avis-content{
+    display: flex;
+    flex-direction:column;
+}
+
+.avis-elem{
+    flex:1;
+    background-color: white;
+    border-radius: 5px;
+    padding: 2rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.avis-elem-text{
+    padding:0 2rem;
+    margin-bottom: 1rem;
+}
+
+.avis-elem-profil img{
+    margin-bottom: 0.5rem;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.avis-elem-profil p{
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.avis-elem-text p i{
+    margin:0.2rem;
+}
+
+/* CONTACT */
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    padding: 10rem 1rem 10rem 1rem;
+    align-items: center;
+}
+
+.contact-form{
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contact-form input{
+    background: #333;
+    border:0;
+    border-bottom: 1px solid #555;
+    padding:1rem;
+    font-size:1.3rem;
+    color: white;
+    outline: 0;
+    margin-bottom: 1rem;
+
+}
+
+.contact-form button{
+    display: block;
+    margin: 3rem auto;
+    padding:1rem 2rem;
+    border:0;
+    background-color: #f1c40f;
+    border-radius: 30px;
+    color: #ddd;
+    font-weight: 700;
+    font-size: 1.3rem;
+    cursor: pointer;
+
+}
+.contact-form button:hover{
+    background-color: orangered;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #444;
+    padding: 5rem 1rem 5rem 1rem;
+}
+footer p{
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
 }
